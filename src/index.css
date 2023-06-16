@@ -25,3 +25,74 @@ code {
     'Courier New',
     monospace;
 }
+
+nav {
+  padding: 0.5rem 5rem;
+}
+
+.nav-list {
+  gap: 1rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-self-flex-end {
+  justify-self: flex-end;
+}
+
+.book {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.add-book-form {
+  width: 82%;
+  margin: 1rem auto;
+}
+
+input {
+  margin: 1rem;
+  width: 40%;
+}
+
+button {
+  width: 10%;
+}
+
+.book-options {
+  padding: 0;
+}
+
+.option {
+  margin: auto 1rem;
+}
+
+.genre,
+.author,
+.title {
+  margin-left: 1rem;
+}
+
+.chapter-progress {
+  width: 40%;
+  padding: 2%;
+}
+
+.update-prog,
+.remove-btn {
+  width: fit-content;
+}
