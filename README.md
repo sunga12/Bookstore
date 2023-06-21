@@ -28,9 +28,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Displays 3 Books]**
+- **[Redux Toolkit]**
 - **[React Routing]**
-- **[Built Using React]**
+- **[Built Using React & Redux]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
