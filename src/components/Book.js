@@ -12,10 +12,6 @@ function Book({
     <div className="book d-flex justify-content-space-between">
       <div className="book-dets">
         <p className="genre">
-          This is the id:
-          {id}
-        </p>
-        <p className="genre">
           {category}
         </p>
         <p className="title">

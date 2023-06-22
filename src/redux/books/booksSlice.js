@@ -16,7 +16,7 @@ const booksSlice = createSlice({
         id: uuidv4(),
         title,
         author,
-        category: 'Action',
+        category: 'Fiction',
         percentage: 1,
         chapter: 34,
       };
