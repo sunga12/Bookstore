@@ -1,7 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuidv4 } from 'uuid';
+import bookItems from '../bookItems';
 
 const initialState = {
-  booksList: [],
+  booksList: bookItems,
 };
 
 const booksSlice = createSlice({
@@ -11,9 +13,10 @@ const booksSlice = createSlice({
     addBook: (state, action) => {
       const { title, author } = action.payload;
       const newBook = {
+        item_id: uuidv4(),
         title,
         author,
-        genre: 'Action',
+        category: 'Action',
         percentage: 1,
         chapter: 34,
       };

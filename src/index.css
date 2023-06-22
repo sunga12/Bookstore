@@ -57,6 +57,7 @@ a {
 .book {
   width: 80%;
   margin: 1rem auto;
+  border: 2px solid navy;
 }
 
 .add-book-form {

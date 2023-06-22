@@ -1,13 +1,16 @@
-function Book(
-  {
-    genre, title, author, percentage, chapter,
-  },
-) {
+// import { useDispatch } from 'react-redux';
+
+// genre, title, author,
+function Book({
+  title, author, category, percentage, chapter,
+}) {
+  // const dispatch = useDispatch();
+
   return (
     <div className="book d-flex justify-content-space-between">
       <div className="book-dets">
         <p className="genre">
-          {genre}
+          {category}
         </p>
         <p className="title">
           {title}
@@ -54,15 +57,15 @@ function Book(
 }
 
 Book.defaultProps = {
-  genre: '',
+  category: '',
   author: '',
   title: '',
-  percentage: 0,
-  chapter: 0,
+  percentage: 1,
+  chapter: 1,
 };
 
 Book.propTypes = {
-  genre: 'string',
+  category: 'string',
   author: 'string',
   title: 'string',
   percentage: 'number',
