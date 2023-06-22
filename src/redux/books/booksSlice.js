@@ -13,7 +13,7 @@ const booksSlice = createSlice({
     addBook: (state, action) => {
       const { title, author } = action.payload;
       const newBook = {
-        item_id: uuidv4(),
+        id: uuidv4(),
         title,
         author,
         category: 'Action',
