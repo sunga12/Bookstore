@@ -144,8 +144,9 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Add/Remove Book features**
-- **[Additional Styling]**
+- Hit the API for posting and fetching books 🚀
+- Add the final touches for the styling👌
+- Add test for the app using React-Testing-Library💯
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
