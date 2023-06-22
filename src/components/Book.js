@@ -1,13 +1,18 @@
-function Book(
-  {
-    genre, title, author, percentage, chapter,
-  },
-) {
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
+
+// genre, title, author,
+function Book({
+  id, title, author, category, percentage, chapter,
+}) {
+  const dispatch = useDispatch();
+
   return (
     <div className="book d-flex justify-content-space-between">
       <div className="book-dets">
         <p className="genre">
-          {genre}
+          {category}
         </p>
         <p className="title">
           {title}
@@ -20,7 +25,7 @@ function Book(
             Comments
           </li>
           <li className="option">
-            <button className="remove-btn" type="button">Remove</button>
+            <button className="remove-btn" type="button" onClick={() => { dispatch(removeBook(id)); }}>Remove</button>
           </li>
           <li className="option">
             Edit
@@ -54,19 +59,21 @@ function Book(
 }
 
 Book.defaultProps = {
-  genre: '',
+  id: '',
+  category: '',
   author: '',
   title: '',
-  percentage: 0,
-  chapter: 0,
+  percentage: 1,
+  chapter: 1,
 };
 
 Book.propTypes = {
-  genre: 'string',
-  author: 'string',
-  title: 'string',
-  percentage: 'number',
-  chapter: 'number',
+  id: PropTypes.string,
+  category: PropTypes.string,
+  author: PropTypes.string,
+  title: PropTypes.string,
+  percentage: PropTypes.number,
+  chapter: PropTypes.number,
 };
 
 export default Book;
