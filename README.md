@@ -6,8 +6,13 @@
 - [📖 \[Bookstore\] ](#-bookstore-)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
   - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -22,24 +27,19 @@
 **[Bookstore]** is a basic website that Displays Books and their details, Allows users to Add/Remove Books from the Store and displays the Reading progress
 
 ## 🛠 Built With <a name="built-with"></a>
-- **[React]**
+- **[HTML]**
+- **[CSS]**
+- **[React & Redux Toolkit]**
+
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Redux Toolkit]**
-- **[React Routing]**
-- **[Built Using React & Redux]**
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Coming Soon
+- **[useDispatch to dispatch an action to the store]**
+- **[useSelector to select and retrieve data from the Redux store.]**
+- **[Add Book via addBook reducer]**
+- **[Remove Book via removeBook reducer]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -47,10 +47,83 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
+
 To get a local copy up and running, follow these steps.
-1. Download the zip file or clone with this command `git clone https://github.com/sunga12/bookstore.git`(Make sure you have [`Git`](https://git-scm.com/) & [`Node.js`](https://nodejs.org/en) installed` in your Computer.)
-2. `npm install`
-3. `npm start`
+
+### Prerequisites
+
+In order to run this project you need:
+
+
+Example command:
+
+```sh
+1.use a browser
+2.use WiFi/cable internet
+```
+ 
+
+### Setup
+
+Clone this repository to your desired folder:
+
+
+Example commands:
+
+```sh
+  
+  git clone git@github.com:sunga12/bookstore.git
+  cd bookstore
+
+
+```
+
+
+### Install
+
+Install this project with:
+
+
+Example command:
+
+```sh
+  npm install
+```
+
+
+### Usage
+
+To run the project, execute the following command in the terminal:
+
+
+Example command:
+
+```sh
+  npm start 
+```
+
+
+### Run tests
+
+To run tests for the linter, run the following command:
+
+
+Example command:
+
+```sh
+npx hint .
+npx eslint .
+```
+
+
+### Deployment
+
+You can deploy this project using:
+
+- Github Pages
+- Render.com
+- Netlify.com
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
