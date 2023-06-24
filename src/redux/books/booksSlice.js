@@ -11,6 +11,9 @@ const initialState = {
 
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ENfILofDRr0lFes8m9WT/books';
 
+// const dispatch = useDispatch();
+// dispatch(getBookItems());
+
 // const data = {
 //   item_id: 1,
 //   title: 'Lion King 64',
@@ -33,10 +36,6 @@ const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstor
 // XK10W86DA3mjEaLcJRei
 // ENfILofDRr0lFes8m9WT
 // xqDpmLzvPxikb9A9LRQw
-
-// export const getBookItems = createAsyncThunk('books/getBookItems', () => fetch(url)
-//   .then((resp) => resp.json())
-//   .catch((err) => console.log(err)));
 
 export const getBookItems = createAsyncThunk('books/getBookItems', async () => {
   let response = []; // Declare response as an empty array initially
@@ -74,7 +73,6 @@ const deleteBookurl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.ne
 export const deleteBook = createAsyncThunk('books/deleteBookItems', async (bookId) => {
   try {
     const resp = await axios.delete(`${deleteBookurl}/${bookId}`);
-    getBookItems();
     return resp.data;
   } catch (error) {
     // console.log(error);

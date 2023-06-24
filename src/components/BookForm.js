@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { postBook } from '../redux/books/booksSlice';
+import { getBookItems, postBook } from '../redux/books/booksSlice';
 
 function BookForm() {
   const dispatch = useDispatch();
@@ -10,6 +10,7 @@ function BookForm() {
   async function handleClick(e) {
     e.preventDefault();
     await dispatch(postBook({ title, author }));
+    await dispatch(getBookItems());
   }
 
   return (

@@ -1,7 +1,7 @@
 /*eslint-disable */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { deleteBook } from '../redux/books/booksSlice';
+import { deleteBook, getBookItems } from '../redux/books/booksSlice';
 
 function Book({
   item_id, title, author, category, percentage, chapter,
@@ -11,7 +11,8 @@ function Book({
   async function handleRemove(e) {
     e.preventDefault();
     try {
-      dispatch(deleteBook(item_id));
+      await dispatch(deleteBook(item_id));
+      await dispatch(getBookItems());
     } catch (error) {
       console.log(error)
     }
@@ -20,10 +21,6 @@ function Book({
   return (
     <div className="book d-flex justify-content-space-between">
       <div className="book-dets">
-        <p>
-          ID:
-          {item_id}
-        </p>
         <p className="genre">
           {category}
         </p>
