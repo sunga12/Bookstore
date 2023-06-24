@@ -1,18 +1,15 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { postBook } from '../redux/books/booksSlice';
 
 function BookForm() {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  // const {
-  //   booksList,
-  // } = useSelector((state) => state.books);
 
-  function handleClick(e) {
+  async function handleClick(e) {
     e.preventDefault();
-    dispatch(addBook({ title, author }));
+    await dispatch(postBook({ title, author }));
   }
 
   return (

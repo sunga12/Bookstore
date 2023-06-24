@@ -1,16 +1,29 @@
+/*eslint-disable */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { deleteBook } from '../redux/books/booksSlice';
 
-// genre, title, author,
 function Book({
-  id, title, author, category, percentage, chapter,
+  item_id, title, author, category, percentage, chapter,
 }) {
   const dispatch = useDispatch();
+
+  async function handleRemove(e) {
+    e.preventDefault();
+    try {
+      dispatch(deleteBook(item_id));
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <div className="book d-flex justify-content-space-between">
       <div className="book-dets">
+        <p>
+          ID:
+          {item_id}
+        </p>
         <p className="genre">
           {category}
         </p>
@@ -25,7 +38,7 @@ function Book({
             Comments
           </li>
           <li className="option">
-            <button className="remove-btn" type="button" onClick={() => { dispatch(removeBook(id)); }}>Remove</button>
+            <button className="remove-btn" key={item_id} type="button" onClick={handleRemove}>Remove</button>
           </li>
           <li className="option">
             Edit
@@ -59,7 +72,7 @@ function Book({
 }
 
 Book.defaultProps = {
-  id: '',
+  item_id: '',
   category: '',
   author: '',
   title: '',
@@ -68,7 +81,7 @@ Book.defaultProps = {
 };
 
 Book.propTypes = {
-  id: PropTypes.string,
+  item_id: PropTypes.string,
   category: PropTypes.string,
   author: PropTypes.string,
   title: PropTypes.string,
