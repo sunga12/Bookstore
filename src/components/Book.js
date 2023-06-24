@@ -43,7 +43,7 @@ function Book({
           </li>
         </ul>
       </div>
-      <div className="status d-flex">
+      <div className="status">
 
         <img src={logo} className="loading-icon" />
         <div>

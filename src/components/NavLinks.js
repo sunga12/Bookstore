@@ -4,7 +4,7 @@ import usericon from '../assets/user-icon.svg';
 function NavLinks() {
   return (
     <nav className="d-flex">
-      <h1>BOOKSTORE</h1>
+      <h1 className="bookstore-h1">Bookstore</h1>
       <ul className="nav-list d-flex align-items-center">
         <li>
           <Link className="link" to="/">Books</Link>

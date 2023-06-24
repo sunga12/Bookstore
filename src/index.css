@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400; /* Font weight 400 for Montserrat */
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300; /* Font weight 300 for Roboto Slab */
+}
+
+
 body {
   margin: 0;
   font-family:
@@ -14,6 +27,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 code {
@@ -27,12 +41,13 @@ code {
 }
 
 nav {
-  padding: 0.5rem 5rem;
+  background-color: #fff;
+  width: 100%;
 }
 
 .nav-list {
   gap: 1rem;
-  width: 70%;
+  width: 80%;
 }
 
 li {
@@ -41,6 +56,12 @@ li {
 
 a {
   text-decoration: none;
+}
+
+.bookstore-h1 {
+  padding: 0 0 0 6.25rem;
+  color: #0290ff;
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .d-flex {
@@ -60,17 +81,8 @@ a {
 }
 
 .add-book-form {
-  width: 82%;
-  margin: 1rem auto;
-}
-
-input {
-  margin: 1rem;
-  width: 40%;
-}
-
-button {
-  width: 10%;
+  width: 100%;
+  margin: 1rem 6.25rem;
 }
 
 .book-options {
@@ -81,7 +93,7 @@ button {
   width: 4.563rem;
   height: 1.188rem;
   margin: 0.188rem 0.938rem 0.125rem 0;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -96,7 +108,7 @@ button {
   height: 1.125rem;
   margin: 0 2.438rem 0 0;
   opacity: 0.5;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -110,7 +122,7 @@ button {
   width: 6.688rem;
   height: 1.188rem;
   margin: 0.25rem 0 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -124,9 +136,9 @@ button {
   width: 12.313rem;
   height: 1.813rem;
   margin: 0.188rem 20.188rem 0 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto Slab', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.375rem;
-  font-weight: bold;
+  font-weight: 700;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -135,8 +147,8 @@ button {
 }
 
 .chapter-progress {
-  width: 40%;
-  padding: 2%;
+  /* width: 40%; */
+  padding-right: 9rem;
 }
 
 .update-prog {
@@ -149,7 +161,8 @@ button {
   background-color: #2399ff;
   border: 0;
   color: #fff;
-  font-weight: 200;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
 }
 
 .remove-btn {
@@ -163,28 +176,28 @@ button {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   height: inherit;
   padding-bottom: 0.1rem;
 }
 
 .book {
-  width: 80%;
   height: 10.625rem;
-  margin: 2.313rem auto 0;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  margin: 2.313rem 6.25rem 0;
+  padding: 2rem 1rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: var(--white-two);
+  background-color: #fff;
+  gap: 7rem;
 }
 
 .percentage {
   width: 4.25rem;
   height: 2.438rem;
   margin: 0.063rem 5.75rem 0 0.688rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -197,9 +210,9 @@ button {
   height: 1.125rem;
   margin: 0.438rem 4.938rem 0.75rem 0.75rem;
   opacity: 0.5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 0.875rem;
-  font-weight: normal;
+  font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -207,12 +220,18 @@ button {
   color: #121212;
 }
 
+.status {
+  border-right: solid 1px #e8e8e8;
+  display: flex;
+  align-items: center;
+}
+
 .current-chap {
   width: 7.875rem;
   height: 1.125rem;
   margin: 0.063rem 3.625rem 0 3.688rem;
   opacity: 0.5;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 0.813rem;
   font-weight: 300;
   font-stretch: normal;
@@ -226,7 +245,7 @@ button {
   width: 4.688rem;
   height: 1.313rem;
   margin: 0.438rem 6.813rem 0.25rem 3.688rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 1rem;
   font-weight: 300;
   font-stretch: normal;
@@ -257,23 +276,25 @@ button {
 }
 
 .new-book-title {
-  width: 19.5rem;
-  height: 2.813rem;
+  width: 38.5rem;
+  height: 1.2rem;
   margin: 1.188rem 2.125rem 0 0;
   padding: 0.813rem 1rem 0.813rem 1rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: var(--white-two);
+  background-color: #fff;
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .new-book-author {
-  width: 18rem;
-  height: 2.813rem;
+  width: 17.5rem;
+  height: 1.2rem;
   margin: 1.188rem 2.125rem 0;
   padding: 0.813rem 0.938rem 0.813rem 1rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: var(--white-two);
+  background-color: #fff;
+  font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .new-book-author:placeholder-shown {
@@ -301,24 +322,25 @@ button {
 
 .add-btn {
   height: 2.813rem;
-  margin: 1.188rem 2.125rem;
-  padding: 1.6rem 0.938rem 2.8rem 1rem;
-  width: fit-content;
-  width: 11.5rem;
+  margin: 1.188rem 0 1.188rem 2.125rem;
+  padding: 0.8rem 0.938rem 0.8rem 1rem;
+  width: 12.5rem;
   border-radius: 3px;
   background-color: #2399ff;
   border: 0;
   color: #fff;
-  font-weight: 200;
+  font-weight: bold;
   font-size: 1rem;
+  font-family: 'Roboto Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 hr {
-  width: 95%;
   border: solid 1px #e8e8e8;
+  margin: 0 6.25rem;
+
 }
 
 .profile {
   height: 40px;
-  margin: 1rem 0 0;
+  margin: 1rem 6.25rem 0;
 }
