@@ -16,7 +16,6 @@ export const getBookItems = createAsyncThunk('books/getBookItems', async () => {
     response = Object.entries(resp.data).map(([key, value]) => ({ item_id: key, ...value }));
     return response;
   } catch (error) {
-    console.log(error);
     return error;
   }
 });
@@ -35,7 +34,6 @@ export const postBook = createAsyncThunk('books/postBookItems', async ({ title, 
     const resp = await axios.post(addBookurl, newBook);
     return resp.data;
   } catch (error) {
-    console.log(error);
     return error;
   }
 });
@@ -46,7 +44,6 @@ export const deleteBook = createAsyncThunk('books/deleteBookItems', async (bookI
     const resp = await axios.delete(`${deleteBookurl}/${bookId}`);
     return resp.data;
   } catch (error) {
-    // console.log(error);
     return error;
   }
 });
