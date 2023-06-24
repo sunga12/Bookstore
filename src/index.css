@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400; /* Font weight 400 for Montserrat */
-}
-
-h1 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 300; /* Font weight 300 for Roboto Slab */
-}
-
-
-body {
   margin: 0;
   font-family:
     -apple-system,
@@ -62,6 +51,15 @@ a {
   padding: 0 0 0 6.25rem;
   color: #0290ff;
   font-family: 'Montserrat', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+}
+
+.link {
+  color: #888;
+}
+
+.link:focus {
+  color: #121212;
 }
 
 .d-flex {
@@ -337,7 +335,6 @@ a {
 hr {
   border: solid 1px #e8e8e8;
   margin: 0 6.25rem;
-
 }
 
 .profile {
