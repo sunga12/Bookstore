@@ -38,8 +38,8 @@
 
 - **[useDispatch to dispatch an action to the store]**
 - **[useSelector to select and retrieve data from the Redux store.]**
-- **[Add Book via addBook reducer]**
-- **[Remove Book via removeBook reducer]**
+- **[Add a Book to the BookStore via the API]**
+- **[Remove a Book from the BookStore via the API]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -54,12 +54,10 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-
-Example command:
-
 ```sh
-1.use a browser
-2.use WiFi/cable internet
+1. A Computer
+2. A browser
+3. WiFi/Cable internet
 ```
  
 
@@ -105,7 +103,7 @@ Example command:
 
 ### Run tests
 
-To run tests for the linter, run the following command:
+To run tests for linter errors, run the following command:
 
 
 Example command:
