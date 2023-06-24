@@ -6,15 +6,9 @@ function BookList() {
     booksList,
   } = useSelector((state) => state.books);
 
-  if (!Array.isArray(booksList)) {
-    console.log('booklist is not an array');
-    return null; // or return an appropriate JSX if the data is not available yet
-  }
-
   return (
     <>
       {booksList.map((item) => (
-        // console.log()
         <>
           <Book
             key={item[0].item_id}

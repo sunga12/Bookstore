@@ -1,8 +1,6 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-// import bookItems from '../bookItems';
-// import thunk from 'redux-thunk';
 
 const initialState = {
   booksList: [],
@@ -10,33 +8,6 @@ const initialState = {
 };
 
 const url = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ENfILofDRr0lFes8m9WT/books';
-
-// const dispatch = useDispatch();
-// dispatch(getBookItems());
-
-// const data = {
-//   item_id: 1,
-//   title: 'Lion King 64',
-//   author: 'Disney Channel',
-//   category: 'Fiction',
-// };
-
-// const options = {
-//   method: 'DELETE',
-//   headers: {
-//     'Content-Type': 'application/json',
-//   },
-//   body: JSON.stringify(data),
-// };
-
-// const response = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ENfILofDRr0lFes8m9WT/books/4', options)
-//   .then((respon) => respon.json())
-//   .then((data) => console.log('data', data));
-
-// XK10W86DA3mjEaLcJRei
-// ENfILofDRr0lFes8m9WT
-// xqDpmLzvPxikb9A9LRQw
-
 export const getBookItems = createAsyncThunk('books/getBookItems', async () => {
   let response = []; // Declare response as an empty array initially
 
