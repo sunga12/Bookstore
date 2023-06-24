@@ -1,10 +1,28 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { getBookItems } from '../redux/books/booksSlice';
 import Book from './Book';
 
 function BookList() {
   const {
     booksList,
   } = useSelector((state) => state.books);
+
+  const dispatch = useDispatch();
+
+  const { isLoading } = useSelector((state) => state.books);
+
+  useEffect(() => {
+    dispatch(getBookItems());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return (
+      <div>
+        <h1 className="loading">Loading...</h1>
+      </div>
+    );
+  }
 
   return (
     <>
