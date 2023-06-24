@@ -11,6 +11,8 @@ function BookForm() {
     e.preventDefault();
     await dispatch(postBook({ title, author }));
     await dispatch(getBookItems());
+    setTitle('');
+    setAuthor('');
   }
 
   return (
