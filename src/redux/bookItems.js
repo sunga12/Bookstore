@@ -1,18 +1,18 @@
 const bookItems = [
   {
-    id: 'item1',
+    item_id: 'item1',
     title: 'The Great Gatsby',
     author: 'John Smith',
     category: 'Fiction',
   },
   {
-    id: 'item2',
+    item_id: 'item2',
     title: 'Anna Karenina',
     author: 'Leo Tolstoy',
     category: 'Fiction',
   },
   {
-    id: 'item3',
+    item_id: 'item3',
     title: 'The Selfish Gene',
     author: 'Richard Dawkins',
     category: 'Non Fiction',
