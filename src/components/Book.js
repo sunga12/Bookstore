@@ -2,6 +2,7 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { deleteBook, getBookItems } from '../redux/books/booksSlice';
+import logo from '../assets/loading.svg';
 
 function Book({
   item_id, title, author, category, percentage, chapter,
@@ -21,7 +22,7 @@ function Book({
   return (
     <div className="book d-flex justify-content-space-between">
       <div className="book-dets">
-        <p className="genre">
+        <p className="category">
           {category}
         </p>
         <p className="title">
@@ -42,15 +43,19 @@ function Book({
           </li>
         </ul>
       </div>
-      <div className="status">
-        <div className="progress-circle" />
-        <p>
+      <div className="status d-flex">
+
+        <img src={logo} className="loading-icon" />
+        <div>
+        <p className="percentage">
           {percentage}
           %
         </p>
-        <p>
+        <p className="completed">
           Completed
         </p>
+        </div>
+
       </div>
       <div className="chapter-progress">
         <p className="current-chap">

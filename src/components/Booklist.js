@@ -39,6 +39,7 @@ function BookList() {
           />
         </>
       ))}
+      <br />
       <hr />
     </>
   );
